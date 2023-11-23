@@ -30,6 +30,12 @@ def get_columns():
 			'fieldtype': 'Float'
 			
 		},
+         {
+			'fieldname': 'pending_stock',
+			'label': 'Pending Stock',
+			'fieldtype': 'Float'
+			
+		},
         
     ]
     return columns
@@ -40,5 +46,5 @@ def get_data(filters=None):
     if filters and filters.get("date"):
         filter_list.append(["date", "=", filters["date"]])
 
-    data = frappe.get_list("Stock Summary", filters=filter_list, fields=["date","total_buy_liters","total_sale_liters"])
+    data = frappe.get_list("Stock Summary", filters=filter_list, fields=["date","total_buy_liters","total_sale_liters","pending_stock"])
     return data

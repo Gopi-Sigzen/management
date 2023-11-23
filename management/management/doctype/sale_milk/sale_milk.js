@@ -3,8 +3,8 @@
 
 frappe.ui.form.on('Sale Milk', {
 	refresh: function(frm) {
-			frm.add_custom_button(__('Purchase Receipt'), function() {
-                frappe.set_route('Form', 'Purchase Receipt', {
+			frm.add_custom_button(__('Sales Invoice'), function() {
+                frappe.set_route('Form', 'Sales Invoice', {
                 });
 				
             }, __("Create"));

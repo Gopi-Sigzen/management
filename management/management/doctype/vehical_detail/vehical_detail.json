@@ -20,8 +20,10 @@
   {
    "fieldname": "vehical",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Vehical",
-   "options": "Vehical Information"
+   "options": "Vehical Information",
+   "reqd": 1
   },
   {
    "fieldname": "address",
@@ -43,8 +45,10 @@
   {
    "fieldname": "driver",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Driver",
-   "options": "Driver Information"
+   "options": "Driver Information",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_udnum",
@@ -53,12 +57,14 @@
   {
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "Date"
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-23 15:38:58.420472",
+ "modified": "2023-11-23 17:31:11.036125",
  "modified_by": "Administrator",
  "module": "management",
  "name": "Vehical Detail",

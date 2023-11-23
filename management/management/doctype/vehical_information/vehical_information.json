@@ -22,7 +22,9 @@
   {
    "fieldname": "vehical_number",
    "fieldtype": "Data",
-   "label": "Vehical Number"
+   "in_list_view": 1,
+   "label": "Vehical Number",
+   "reqd": 1
   },
   {
    "fieldname": "colour",
@@ -32,7 +34,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-22 15:57:00.947837",
+ "modified": "2023-11-23 17:31:53.514029",
  "modified_by": "Administrator",
  "module": "management",
  "name": "Vehical Information",

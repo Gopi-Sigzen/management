@@ -20,13 +20,17 @@
   {
    "fieldname": "member_name",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Member Name",
-   "options": "Member Registration"
+   "options": "Member Registration",
+   "reqd": 1
   },
   {
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "Date"
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
   },
   {
    "fieldname": "total_price",
@@ -57,7 +61,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-23 16:07:06.107018",
+ "modified": "2023-11-23 17:30:46.370104",
  "modified_by": "Administrator",
  "module": "management",
  "name": "Buy Milk",

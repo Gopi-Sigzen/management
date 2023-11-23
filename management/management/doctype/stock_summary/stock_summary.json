@@ -11,24 +11,34 @@
   "date",
   "stock_information_section",
   "total_buy_liters",
+  "total_buy_liters_price",
   "column_break_preii",
-  "total_sale_liters"
+  "total_sale_liters",
+  "total_sale_liters_price",
+  "section_break_exzjv",
+  "pending_stock"
  ],
  "fields": [
   {
    "fieldname": "total_buy_liters",
    "fieldtype": "Float",
-   "label": "Total Buy Liters"
+   "in_list_view": 1,
+   "label": "Total Buy Liters",
+   "reqd": 1
   },
   {
    "fieldname": "total_sale_liters",
    "fieldtype": "Float",
-   "label": "Total Sale Liters"
+   "in_list_view": 1,
+   "label": "Total Sale Liters",
+   "reqd": 1
   },
   {
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "Date"
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
   },
   {
    "fieldname": "stock_information_section",
@@ -38,11 +48,30 @@
   {
    "fieldname": "column_break_preii",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pending_stock",
+   "fieldtype": "Data",
+   "label": "Pending Stock"
+  },
+  {
+   "fieldname": "section_break_exzjv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_buy_liters_price",
+   "fieldtype": "Data",
+   "label": "Total Buy Liters Price"
+  },
+  {
+   "fieldname": "total_sale_liters_price",
+   "fieldtype": "Data",
+   "label": "Total Sale Liters Price"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-23 15:43:08.392279",
+ "modified": "2023-11-23 17:30:21.672494",
  "modified_by": "Administrator",
  "module": "management",
  "name": "Stock Summary",

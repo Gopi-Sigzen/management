@@ -8,6 +8,12 @@ frappe.ui.form.on('Buy Milk', {
         if (frm.doc.__islocal) {
             frm.page.clear_inner_toolbar();
         } else {
+            frm.add_custom_button(__('Go To Sample Report'), function() {
+                var new_buy_milk = frappe.model.get_new_doc("Sample Report");
+                new_buy_milk.member_name = frm.doc.member_name;
+				new_buy_milk.milk_type = frm.doc.milk_type;
+                frappe.set_route("Form", "Sample Report", new_buy_milk.name);
+            });
 
 			frm.add_custom_button(__('Purchase Receipt'), function() {
                 frappe.set_route('Form', 'Purchase Receipt', {
@@ -16,7 +22,8 @@ frappe.ui.form.on('Buy Milk', {
             }, __("Create"));
         }
     }
-});
+}
+);
 
 frappe.ui.form.on('Buy Child Table', {
     liter: function(frm, cdt, cdn) {
@@ -35,6 +42,7 @@ frappe.ui.form.on('Buy Child Table', {
         }
     }
 });
+
 
 
 

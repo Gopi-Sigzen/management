@@ -22,3 +22,17 @@ class BuyMilk(Document):
         self.total_liters = total_liters
         self.total_price = total_price
 
+    # def on_save(self):
+    #     trans_doc = frappe.new_doc('Purchase Receipt')
+    #     trans_doc.invoice_no = self.name,
+    #     trans_doc.customer = self.customer
+    #     for data in self.items:
+    #         trans_doc.append('product', {
+    #                 'item_code': data.item_code,
+    #                 'item_name': data.item_name,
+    #                 'qty': data.qty,
+    #                 'amount': data.amount,
+    #                 'rate': data.rate,
+    #                 })
+    #     trans_doc.save()    
+
