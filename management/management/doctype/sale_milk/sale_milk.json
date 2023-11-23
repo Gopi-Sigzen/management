@@ -30,7 +30,8 @@
   {
    "fieldname": "total_price",
    "fieldtype": "Currency",
-   "label": "Total Price"
+   "label": "Total Price",
+   "read_only": 1
   },
   {
    "fieldname": "child_table",
@@ -49,12 +50,13 @@
   {
    "fieldname": "total_liters",
    "fieldtype": "Float",
-   "label": "Total Liter"
+   "label": "Total Liter",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-23 12:39:34.723066",
+ "modified": "2023-11-23 16:14:40.382320",
  "modified_by": "Administrator",
  "module": "management",
  "name": "Sale Milk",

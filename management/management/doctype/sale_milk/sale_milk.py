@@ -16,7 +16,7 @@ class SaleMilk(Document):
         for item in self.child_table:
        
             total_liters += float(item.liter)
-            total_price += float(item.price)
+            total_price += (item.price)
 
     
         self.total_liters = total_liters
