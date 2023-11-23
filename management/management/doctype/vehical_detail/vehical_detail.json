@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{vehical}",
+ "creation": "2023-11-22 15:15:27.570853",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vehical",
+  "driver",
+  "date",
+  "column_break_udnum",
+  "address",
+  "shift",
+  "total_milk"
+ ],
+ "fields": [
+  {
+   "fieldname": "vehical",
+   "fieldtype": "Link",
+   "label": "Vehical",
+   "options": "Vehical Information"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Select",
+   "label": "Shift",
+   "options": "\nMorning\nEvening"
+  },
+  {
+   "fieldname": "total_milk",
+   "fieldtype": "Float",
+   "label": "Total Milk"
+  },
+  {
+   "fieldname": "driver",
+   "fieldtype": "Link",
+   "label": "Driver",
+   "options": "Driver Information"
+  },
+  {
+   "fieldname": "column_break_udnum",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-23 15:38:58.420472",
+ "modified_by": "Administrator",
+ "module": "management",
+ "name": "Vehical Detail",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

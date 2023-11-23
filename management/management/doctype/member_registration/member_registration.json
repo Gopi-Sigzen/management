@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{member_name}",
+ "creation": "2023-11-22 14:48:25.915588",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "member_name",
+  "address",
+  "milk_type",
+  "column_break_pn0ow",
+  "contact_no",
+  "email_address",
+  "date_of_registration"
+ ],
+ "fields": [
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "milk_type",
+   "fieldtype": "Select",
+   "label": "Milk Type",
+   "options": "\nCow\nBuffalo"
+  },
+  {
+   "fieldname": "contact_no",
+   "fieldtype": "Phone",
+   "label": "Contact No"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address"
+  },
+  {
+   "fieldname": "date_of_registration",
+   "fieldtype": "Date",
+   "label": "Date Of Registration"
+  },
+  {
+   "fieldname": "column_break_pn0ow",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "label": "Member Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-23 10:49:15.522873",
+ "modified_by": "Administrator",
+ "module": "management",
+ "name": "Member Registration",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "milk_type"
+}

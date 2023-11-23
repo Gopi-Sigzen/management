@@ -1,0 +1,81 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{member_name}",
+ "creation": "2023-11-22 14:56:58.045545",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "member_name",
+  "date",
+  "column_break_vww36",
+  "total_liters",
+  "total_price",
+  "section_break_svoq4",
+  "child_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "member_name",
+   "fieldtype": "Link",
+   "label": "Member Name",
+   "options": "Member Registration"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "total_price",
+   "fieldtype": "Currency",
+   "label": "Total price"
+  },
+  {
+   "fieldname": "column_break_vww36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_liters",
+   "fieldtype": "Float",
+   "label": "Total Liters"
+  },
+  {
+   "fieldname": "child_table",
+   "fieldtype": "Table",
+   "label": "Child Table",
+   "options": "Buy Child Table"
+  },
+  {
+   "fieldname": "section_break_svoq4",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-23 10:58:35.950661",
+ "modified_by": "Administrator",
+ "module": "management",
+ "name": "Buy Milk",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{member_name}",
+ "creation": "2023-11-22 17:40:03.623380",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "member_name",
+  "collection_date",
+  "milk_quantity_in_ml",
+  "milk_type",
+  "column_break_efah6",
+  "test_type",
+  "fat_content",
+  "protein_content",
+  "bactreial_count",
+  "test_report_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "member_name",
+   "fieldtype": "Data",
+   "label": "Member Name"
+  },
+  {
+   "fieldname": "collection_date",
+   "fieldtype": "Date",
+   "label": "Collection date"
+  },
+  {
+   "depends_on": "eval:doc.test_type =='Fat Content'",
+   "fieldname": "fat_content",
+   "fieldtype": "Float",
+   "label": "Fat Content"
+  },
+  {
+   "depends_on": "eval:doc.test_type == 'Protein Content'",
+   "fieldname": "protein_content",
+   "fieldtype": "Float",
+   "label": "Protein Content"
+  },
+  {
+   "depends_on": "eval:doc.test_type == 'Bactreial Count'",
+   "fieldname": "bactreial_count",
+   "fieldtype": "Int",
+   "label": "Bactreial Count"
+  },
+  {
+   "fieldname": "test_type",
+   "fieldtype": "Select",
+   "label": "Test Type",
+   "options": "\nFat Content\nProtein Content\nBactreial Count"
+  },
+  {
+   "fieldname": "test_report_status",
+   "fieldtype": "Select",
+   "label": "Test Report Status",
+   "options": "Pending\nProgress\nCompleted"
+  },
+  {
+   "fieldname": "column_break_efah6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "milk_type",
+   "fieldtype": "Data",
+   "label": "Milk Type"
+  },
+  {
+   "fieldname": "milk_quantity_in_ml",
+   "fieldtype": "Float",
+   "label": "Milk Quantity In ML"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-22 18:23:47.078834",
+ "modified_by": "Administrator",
+ "module": "management",
+ "name": "Sample Report",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

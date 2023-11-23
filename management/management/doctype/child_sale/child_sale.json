@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-22 15:06:57.000105",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "shift",
+  "type",
+  "rate",
+  "fat",
+  "liter",
+  "price_per_liter",
+  "price"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Select",
+   "label": "Shift",
+   "options": "\nMorning\nEvening"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "\nCow\nBuffalo"
+  },
+  {
+   "fieldname": "fat",
+   "fieldtype": "Float",
+   "label": "Fat"
+  },
+  {
+   "fieldname": "liter",
+   "fieldtype": "Float",
+   "label": "Liter"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Data",
+   "label": "rate"
+  },
+  {
+   "fieldname": "price_per_liter",
+   "fieldtype": "Currency",
+   "label": "Price Per Liter"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-23 13:41:39.065816",
+ "modified_by": "Administrator",
+ "module": "management",
+ "name": "Child Sale",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
