@@ -17,7 +17,8 @@
   "fat_content",
   "protein_content",
   "bactreial_count",
-  "test_report_status"
+  "test_report_status",
+  "amended_from"
  ],
  "fields": [
   {
@@ -62,8 +63,9 @@
   {
    "fieldname": "test_report_status",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "Test Report Status",
-   "options": "Pending\nProgress\nCompleted"
+   "options": "\nDraft\nPending\nApproved\nRejected"
   },
   {
    "fieldname": "column_break_efah6",
@@ -72,10 +74,10 @@
   {
    "fieldname": "milk_type",
    "fieldtype": "Select",
+   "hidden": 1,
    "in_list_view": 1,
    "label": "Milk Type",
-   "options": "\nCow\nBuffalo",
-   "reqd": 1
+   "options": "\nCow\nBuffalo"
   },
   {
    "fieldname": "milk_quantity_in_ml",
@@ -83,11 +85,20 @@
    "in_list_view": 1,
    "label": "Milk Quantity In ML",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Sample Report",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-23 17:38:30.251164",
+ "modified": "2023-11-24 17:24:37.685006",
  "modified_by": "Administrator",
  "module": "management",
  "name": "Sample Report",
@@ -103,6 +114,30 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Lab Technician",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Dairy Manager",
    "share": 1,
    "write": 1
   }

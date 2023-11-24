@@ -3,15 +3,17 @@
 
 frappe.ui.form.on('Stock Summary', {
     refresh: function (frm) {
-//         frm.add_custom_button(__('Calculate Pending Stock'), function () {
-//             const totalBuyLiters = frm.doc.total_buy_liters;
-//             const totalSaleLiters = frm.doc.total_sale_liters;
-//             const stockSummary = new StockSummary(totalBuyLiters, totalSaleLiters);
-//             const pendingStock = stockSummary.calculatePendingStock();
-//             frappe.msgprint(`Pending Stock: ${pendingStock} liters`);
-//         });
-//     }
-// });
+        if (frm.doc.__islocal) {
+            frm.page.clear_inner_toolbar();
+        } else {
+        frm.add_custom_button(__('Go To Vehical Detail'), function() {
+            var new_buy_milk = frappe.model.get_new_doc("Vehical Detail");
+            
+            frappe.set_route("Form", "Vehical Detail", new_buy_milk.name);
+        });
+    }
+}
+});
 
 // class StockSummary {
 //     constructor(totalBuyLiters = 0, totalSaleLiters = 0) {
@@ -22,9 +24,7 @@ frappe.ui.form.on('Stock Summary', {
 //     calculatePendingStock() {
 //         const pending_stock = this.totalBuyLiters - this.totalSaleLiters;
 //         return  pending_stock;
-     }
- });
-
+    
 // Copyright (c) 2023, frappe and contributors
 // For license information, please see license.txt
 

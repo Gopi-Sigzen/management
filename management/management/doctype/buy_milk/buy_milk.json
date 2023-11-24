@@ -11,18 +11,20 @@
   "member_name",
   "date",
   "column_break_vww36",
+  "test_type",
   "total_liters",
   "total_price",
   "section_break_svoq4",
-  "child_table"
+  "child_table",
+  "status",
+  "amended_from"
  ],
  "fields": [
   {
    "fieldname": "member_name",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Member Name",
-   "options": "Member Registration",
    "reqd": 1
   },
   {
@@ -52,16 +54,41 @@
    "fieldname": "child_table",
    "fieldtype": "Table",
    "label": "Child Table",
-   "options": "Buy Child Table"
+   "options": "Buy Child Table",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_svoq4",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Status",
+   "options": "\nDraft\nPending\nApproved\nRejected"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Buy Milk",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "test_type",
+   "fieldtype": "Select",
+   "label": "Test Type",
+   "options": "\nFat Content\nProtein Content\nBactreial Count",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2023-11-23 17:30:46.370104",
+ "modified": "2023-11-24 17:46:38.910707",
  "modified_by": "Administrator",
  "module": "management",
  "name": "Buy Milk",
@@ -77,6 +104,28 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Dairy Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "report": 1,
+   "role": "Lab Technician",
+   "select": 1,
    "share": 1,
    "write": 1
   }

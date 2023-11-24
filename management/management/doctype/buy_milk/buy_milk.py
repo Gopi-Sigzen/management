@@ -6,10 +6,10 @@ from frappe.model.document import Document
 
 class BuyMilk(Document):
     def validate(self):
-        today = frappe.utils.today()
+        # today = frappe.utils.today()
         
-        if self.date < today:
-            frappe.throw("Date cannot be in the past.")
+        # if self.date < today:
+        #     frappe.throw("Date cannot be in the past.")
 
         total_liters = 0
         total_price = 0
@@ -24,11 +24,11 @@ class BuyMilk(Document):
 
     # def on_save(self):
     #     trans_doc = frappe.new_doc('Purchase Receipt')
-    #     trans_doc.invoice_no = self.name,
+    #     trans_doc.supplier = self.member_name,
     #     trans_doc.customer = self.customer
     #     for data in self.items:
     #         trans_doc.append('product', {
-    #                 'item_code': data.item_code,
+    #                 'shift': data.shift,
     #                 'item_name': data.item_name,
     #                 'qty': data.qty,
     #                 'amount': data.amount,

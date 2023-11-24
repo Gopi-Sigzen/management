@@ -11,10 +11,8 @@
   "date",
   "stock_information_section",
   "total_buy_liters",
-  "total_buy_liters_price",
   "column_break_preii",
   "total_sale_liters",
-  "total_sale_liters_price",
   "section_break_exzjv",
   "pending_stock"
  ],
@@ -34,6 +32,7 @@
    "reqd": 1
   },
   {
+   "default": "Today",
    "fieldname": "date",
    "fieldtype": "Date",
    "in_list_view": 1,
@@ -52,26 +51,17 @@
   {
    "fieldname": "pending_stock",
    "fieldtype": "Data",
-   "label": "Pending Stock"
+   "label": "Pending Stock",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_exzjv",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "total_buy_liters_price",
-   "fieldtype": "Data",
-   "label": "Total Buy Liters Price"
-  },
-  {
-   "fieldname": "total_sale_liters_price",
-   "fieldtype": "Data",
-   "label": "Total Sale Liters Price"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-23 17:30:21.672494",
+ "modified": "2023-11-24 17:54:26.750292",
  "modified_by": "Administrator",
  "module": "management",
  "name": "Stock Summary",
@@ -87,6 +77,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Dairy Manager",
    "share": 1,
    "write": 1
   }

@@ -36,14 +36,17 @@
   {
    "fieldname": "contact_no",
    "fieldtype": "Phone",
-   "label": "Contact No"
+   "label": "Contact No",
+   "reqd": 1
   },
   {
    "fieldname": "email_address",
    "fieldtype": "Data",
-   "label": "Email Address"
+   "label": "Email Address",
+   "reqd": 1
   },
   {
+   "default": "Today",
    "fieldname": "date_of_registration",
    "fieldtype": "Date",
    "in_list_view": 1,
@@ -64,7 +67,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-23 17:31:40.697083",
+ "modified": "2023-11-24 17:54:46.045574",
  "modified_by": "Administrator",
  "module": "management",
  "name": "Member Registration",
@@ -82,10 +85,21 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Dairy Manager",
+   "share": 1,
+   "write": 1
   }
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "title_field": "milk_type"
+ "states": []
 }

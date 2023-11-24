@@ -5,8 +5,9 @@ import frappe
 from frappe.model.document import Document
 
 class SampleReport(Document):
-     def validate(self):
-        today = frappe.utils.today()
+    pass
+#      def validate():
+#         today = frappe.utils.today()
         
-        if self.collection_date < today:
-                frappe.throw("collection date cannot be in the past")
+#         if collection_date < today:
+#                 frappe.throw("collection date cannot be in the past")

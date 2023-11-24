@@ -5,9 +5,9 @@ import frappe
 from frappe.model.document import Document
 
 class StockSummary(Document):
-    def validate(self):
+    def on_load(self):
         today = frappe.utils.today()
         
         if self.date < today:
-                frappe.throw("Date cannot be in the past.")
+                frappe.throw("Enter valid date.")
 	

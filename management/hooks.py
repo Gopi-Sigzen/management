@@ -34,6 +34,27 @@ app_license = "MIT"
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
+fixtures = [
+    {
+        "dt":"Role"
+    },
+    {
+        "dt":"Role Profile"
+    },
+    {
+        "dt":"Website Settings"
+    },
+    {
+        "dt":"Workflow State"
+    },
+     {
+        "dt":"Workflow Action"
+    },
+    {
+        "dt":"Module Profile"
+    }
+]
+
 # Home Pages
 # ----------
 

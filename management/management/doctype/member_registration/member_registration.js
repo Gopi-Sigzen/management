@@ -1,6 +1,18 @@
 // Copyright (c) 2023, frappe and contributors
 // For license information, please see license.txt
 frappe.ui.form.on('Member Registration', {
+	setup: function(frm) {
+        frm.set_query('address', function(doc) {
+            return {
+                filters: {
+                    'link_doctype': 'Member Registration',
+                    'link_name': doc.name
+                }
+            };
+        });
+        
+        
+    },
 	validate: function(frm) {
 		const date_of_registration = frm.doc.date_of_registration;
 
@@ -28,8 +40,8 @@ frappe.ui.form.on('Member Registration', {
 		else{
             frm.add_custom_button(__('Go To Buy Milk'), function() {
                 var new_buy_milk = frappe.model.get_new_doc("Buy Milk");
-                // new_buy_milk.member_name = frm.doc.member_name;
-				new_buy_milk.milk_type = frm.doc.milk_type;
+                new_buy_milk.member_name = frm.doc.member_name;
+				new_buy_milk.date = frm.doc.date_of_registration;
                 frappe.set_route("Form", "Buy Milk", new_buy_milk.name);
             });
         }

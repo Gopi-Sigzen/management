@@ -6,7 +6,7 @@ def execute(filters=None):
     columns = get_columns()
     data = get_data(filters)
     
-    # Add a chart
+  
     chart = {
         'data': {
             'labels': [row.get('date') for row in data],
@@ -21,7 +21,7 @@ def execute(filters=None):
                 }
             ]
         },
-        'type': 'bar',
+        'type': 'pie',
         'colors': ['#3498db', '#e74c3c'],
         'title': 'Milk Purchase Analysis',
         'height': 300,
