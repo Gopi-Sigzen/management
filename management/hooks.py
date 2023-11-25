@@ -52,6 +52,12 @@ fixtures = [
     },
     {
         "dt":"Module Profile"
+    },
+    {
+        "dt":"Test"
+    },
+    {
+        "dt":"Test Investigation"
     }
 ]
 

@@ -9,7 +9,7 @@ frappe.ui.form.on('Buy Milk', {
             frm.page.clear_inner_toolbar();
         } else {
             
-            if (frappe.user.has_role('Lab Technician') && frm.doc.workflow_state === 'Approved'){
+            // if (frappe.user.has_role('Lab Technician') && frm.doc.workflow_state === 'Approved'){
             frm.add_custom_button(__('Go To Sample Report'), function() {
                 var new_buy_milk = frappe.model.get_new_doc("Sample Report");
                 new_buy_milk.member_name = frm.doc.member_name;
@@ -17,7 +17,7 @@ frappe.ui.form.on('Buy Milk', {
                 new_buy_milk.test_type = frm.doc.test_type;
                 frappe.set_route("Form", "Sample Report", new_buy_milk.name);
             });
-        }
+        // }
             if (frappe.user.has_role('Dairy Manager') && frm.doc.workflow_state === 'Approved'){
             frm.add_custom_button(__('Go To Sale Milk'), function() {
                 var new_buy_milk = frappe.model.get_new_doc("Sale Milk");

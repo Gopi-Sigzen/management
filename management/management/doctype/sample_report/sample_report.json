@@ -18,7 +18,9 @@
   "protein_content",
   "bactreial_count",
   "test_report_status",
-  "amended_from"
+  "amended_from",
+  "section_break_xzkwi",
+  "test"
  ],
  "fields": [
   {
@@ -55,9 +57,9 @@
   },
   {
    "fieldname": "test_type",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "label": "Test Type",
-   "options": "\nFat Content\nProtein Content\nBactreial Count",
+   "options": "Test Type",
    "reqd": 1
   },
   {
@@ -94,11 +96,21 @@
    "options": "Sample Report",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "test",
+   "fieldtype": "Table",
+   "label": "Test",
+   "options": "Test"
+  },
+  {
+   "fieldname": "section_break_xzkwi",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-24 17:24:37.685006",
+ "modified": "2023-11-25 11:20:49.912803",
  "modified_by": "Administrator",
  "module": "management",
  "name": "Sample Report",

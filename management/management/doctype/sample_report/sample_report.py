@@ -6,8 +6,8 @@ from frappe.model.document import Document
 
 class SampleReport(Document):
     pass
-#      def validate():
-#         today = frappe.utils.today()
-        
-#         if collection_date < today:
-#                 frappe.throw("collection date cannot be in the past")
+@frappe.whitelist()
+def test_type(test_type):
+    items=[]
+    list=frappe.get_list("Test Investigation" , filters={"test_type":test_type} , fields=["investigation","reference_value"])
+    return list

@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-25 10:59:38.758663",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "investigation",
+  "test_type",
+  "reference_value",
+  "result",
+  "grading_scale"
+ ],
+ "fields": [
+  {
+   "fieldname": "test_type",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Test Type",
+   "options": "Test Type"
+  },
+  {
+   "fieldname": "reference_value",
+   "fieldtype": "Data",
+   "label": "Reference Value"
+  },
+  {
+   "fieldname": "result",
+   "fieldtype": "Data",
+   "label": "Result"
+  },
+  {
+   "fieldname": "grading_scale",
+   "fieldtype": "Data",
+   "label": "Grading Scale"
+  },
+  {
+   "fieldname": "investigation",
+   "fieldtype": "Data",
+   "label": "Investiogation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-25 11:24:58.321350",
+ "modified_by": "Administrator",
+ "module": "management",
+ "name": "Test",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

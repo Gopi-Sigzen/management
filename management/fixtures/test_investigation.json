@@ -1,0 +1,83 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Test Investigation",
+  "investigation": "Fat",
+  "modified": "2023-11-25 11:09:31.244566",
+  "name": "Buffalo Milk Test-Fat",
+  "reference_value": "3.10 - 10.5",
+  "test_type": "Buffalo Milk Test"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Test Investigation",
+  "investigation": "Protein",
+  "modified": "2023-11-25 11:09:47.868235",
+  "name": "Buffalo Milk Test-Protein",
+  "reference_value": "2.29 - 3.72",
+  "test_type": "Buffalo Milk Test"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Test Investigation",
+  "investigation": "Lactose",
+  "modified": "2023-11-25 11:10:11.542415",
+  "name": "Buffalo Milk Test-Lactose",
+  "reference_value": "4.18 - 5.25",
+  "test_type": "Buffalo Milk Test"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Test Investigation",
+  "investigation": "Non Fat Solids",
+  "modified": "2023-11-25 11:10:37.100527",
+  "name": "Buffalo Milk Test-Non Fat Solids",
+  "reference_value": "8.29 - 9.35",
+  "test_type": "Buffalo Milk Test"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Test Investigation",
+  "investigation": "Bacterial",
+  "modified": "2023-11-25 11:11:06.881027",
+  "name": "Buffalo Milk Test-Bacterial",
+  "reference_value": "10 - 60",
+  "test_type": "Buffalo Milk Test"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Test Investigation",
+  "investigation": "Fat",
+  "modified": "2023-11-25 11:11:32.926114",
+  "name": "Cow Milk test-Fat",
+  "reference_value": "3.10 - 10.5",
+  "test_type": "Cow Milk test"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Test Investigation",
+  "investigation": "Protein",
+  "modified": "2023-11-25 11:11:55.923309",
+  "name": "Cow Milk test-Protein",
+  "reference_value": "2.29 - 3.72",
+  "test_type": "Cow Milk test"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Test Investigation",
+  "investigation": "Lactose",
+  "modified": "2023-11-25 11:12:10.982056",
+  "name": "Cow Milk test-Lactose",
+  "reference_value": "4.18 - 5.25",
+  "test_type": "Cow Milk test"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Test Investigation",
+  "investigation": "Non Fat Solids",
+  "modified": "2023-11-25 11:12:31.928708",
+  "name": "Cow Milk test-Non Fat Solids",
+  "reference_value": "8.29 - 9.35",
+  "test_type": "Cow Milk test"
+ }
+]
