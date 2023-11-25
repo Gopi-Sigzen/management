@@ -47,4 +47,18 @@ def get_data(filters=None):
     #     filter_list.append(["date", "=", filters["date"]])
 
     data = frappe.get_list("Sale Milk", filters=filter_list, fields=["customer_name","date", "total_liters","total_price"])
+    
+    total_liters = sum(float(row["total_liters"] or 0) for row in data)
+    total_price = sum(float(row["total_price"] or 0) for row in data)
+
+
+    totals_row = {
+        "date": "Total",
+        
+        "total_liters": total_liters,
+        "total_price": total_price,
+    }
+    data.append(totals_row)
+
     return data
+    
